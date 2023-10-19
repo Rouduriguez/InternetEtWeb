@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+}
+i{
+    color: black;
+}
+h2{
+    font-weight: 900;
+}
+strong{
+    font-size: larger;
+    color: black;
+}
+
+#donec {
+    color: rgb(0, 168, 50);
+}
+
+p {
+    color: black;
+}
+
+img {
+    display: block;
+    margin: auto;
+    border-style: solid;
+    border-radius: 10%;
+    border-color: blue;
+    
+}
+
+.img:visited
+{
+    border: 20px solid red;
+}
+
+ul{
+    list-style-type:disc;
+}
+#ul1 {
+    list-style-image: url(images/couvert15.gif);
+}
+
+#ul1_2 {
+    list-style-image: url(images/puceIP.gif);
+    border-style: solid;
+    border-color: grey;
+    border-width: 0.7em;
+}
+
+#ul2 {
+    background-image: url(images/heart.jpg);
+    list-style-type: square;
+}
+.fleche::before {
+    content: "->";
+}
+
+.fleche::after {
+    content:"<-";
+}
+
+
+
+/*
+main {
+    display: flex;
+    flex-direction: row; 
+}
+
+header{
+    text-align: center;
+    background-color: rgb(100, 152, 235);
+    padding-bottom: 75px;
+    padding-top: 1px; 
+    }
+
+aside {
+    background-color: lightyellow;
+    width: 15%;
+    padding: 1% 1% 1% 0.5%;
+}
+
+.violet {
+    background-color: lightpink;
+    width: 85%;
+    padding-left: 3%;
+    margin: 0 0 0 0;
+} */
+
+main {
+    background-color: grey;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 15% 85%;
+    width: 100%;
+}
+ header{
+    text-align: center;
+    background-color: rgb(100, 152, 235);
+    padding-bottom: 75px;
+    padding-top: 1px;  
+    }
+
+ aside {
+    background-color: rgb(254, 249, 207);
+    padding: 1% 1% 1% 0.5%;
+    grid-row: 1;
+    grid-column: 1 ;
+}
+
+ .violet {
+    background-color: rgb(216, 192, 216);
+    padding-left: 3%;
+    margin: 0 0 0 0;
+    grid-column: 2 / 3;
+} 

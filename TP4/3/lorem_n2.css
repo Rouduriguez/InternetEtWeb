@@ -1,0 +1,60 @@
+i{
+    color: black;
+}
+h2{
+    font-weight: 900;
+}
+strong{
+    font-size: larger;
+    color: black;
+}
+
+#donec {
+    color: rgb(0, 168, 50);
+}
+
+p {
+    color: black;
+}
+
+#upjv {
+    display: block;
+    margin: auto;    
+}
+
+#bordure_rouge {
+    border-color: blue;
+    border-style: solid;
+    border-radius: 10%;
+}
+
+#bordure_rouge:visited
+{
+    border-color: red;
+}
+
+ul{
+    list-style-type:disc;
+}
+#ul1 {
+    list-style-image: url(images/couvert15.gif);
+}
+
+#ul1_2 {
+    list-style-image: url(images/puceIP.gif);
+    border-style: solid;
+    border-color: grey;
+    border-width: 0.7em;
+}
+
+#ul2 {
+    background-image: url(images/heart.jpg);
+    list-style-type: square;
+}
+.fleche::before {
+    content: "->";
+}
+
+.fleche::after {
+    content:"<-";
+}

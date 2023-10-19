@@ -1,0 +1,30 @@
+a:visited {
+    color: black;
+}
+a:hover{
+    color: red;
+}
+
+h1{
+    text-align: center;
+}
+h2 {
+    text-align: right;
+}
+
+.under{
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.yellow {
+    color: blue;
+}
+
+mark {
+    background-color: turquoise;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
