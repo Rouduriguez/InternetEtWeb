@@ -1,0 +1,155 @@
+body>p {
+	text-align: center;
+	font-weight: bold;
+}
+#conteneur {
+	margin: auto;
+	width: 60%;
+	text-align: center;
+	border: .25em solid black;
+	display: grid;
+	gap: .1em;
+	padding: .1%;
+	grid-template-rows: repeat(11, 1fr);
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-areas: 
+	"j0 j1 j2 j3 j4 j5"
+	"h1 c1 . al1 r1 ."
+	"h2 c1 ar2 al1 r1 cr1"
+	"h3 bd1 ar2 bd2 r2 cr1"
+	"h4 . ar2 bd2 r2 ."
+	"h5 rep1 rep1 bd2 rep3 rep3"
+	"h6 ar1 . rep2 r3 cr2"
+	"h7 ar1 c3 al2 r3 cr2"
+	"h8 c2 c3 al2 r3 cr3"
+	"h9 sp1 sp1 al2 . cr3"
+	"h10 sp1 sp1 sp2 sp2 sp2";
+}
+#conteneur > * {
+	border: 0.1em solid rgb(139,157,186);
+}
+#j0 {grid-area: j0;}
+#j1 {grid-area: j1;}
+#j2 {grid-area: j2;}
+#j3 {grid-area: j3;}
+#j4 {grid-area: j4;}
+#j5 {grid-area: j5;}
+#j6 {grid-area: j6;}
+#h1 {grid-area: h1;}
+#h2 {grid-area: h2;}
+#h3 {grid-area: h3;}
+#h4 {grid-area: h4;}
+#h5 {grid-area: h5;}
+#h6 {grid-area: h6;}
+#h7 {grid-area: h7;}
+#h8 {grid-area: h8;}
+#h9 {grid-area: h9;}
+#h10 {grid-area: h10;}
+#j0, #j1, #j2, #j3, #j4, #j5 {
+	background-color: rgb(88,136,233);
+	font-weight: bold;
+}
+#h1, #h2, #h3, #h4, #h5, #h6, #h7, #h8, #h9, #h10 {
+	font-weight: bold;
+}
+#c1 {
+	background-color: rgb(115,255,0);
+	grid-area: c1;
+}
+#c2 {
+    background-color: rgb(115,255,0);
+	grid-area: c2;
+}
+#c3 {
+    background-color: rgb(115,255,0);
+	grid-area: c3;
+}
+#bd1 {
+    background-color: rgb(83,146,148);
+	grid-area: bd1
+}
+#bd2 {
+    background-color: rgb(83,146,148);
+	grid-area: bd2
+}
+#ar1 {
+    background-color: rgb(216,175,123);
+	grid-area: ar1
+}
+#ar2 {
+    background-color: rgb(216,175,123);
+	grid-area: ar2
+}
+#rep1 {
+    background-color: rgb(158,158,158);
+	grid-area: rep1
+}
+#rep2 {
+    background-color: rgb(158,158,158);
+	grid-area: rep2
+}
+#rep3 {
+    background-color: rgb(158,158,158);
+	grid-area: rep3
+}
+#al1 {
+    background-color: rgb(215,18,51);
+	grid-area: al1
+}
+#al2 {
+    background-color: rgb(215,18,51);
+	grid-area: al2
+}
+#sp1 {
+    background-color: rgb(99,115,132);
+	grid-area: sp1
+}
+#sp2 {
+    background-color: rgb(99,115,132);
+	grid-area: sp2
+}
+#r1 {
+    background-color: rgb(0,182,255);
+	grid-area: r1
+}
+#r2 {
+    background-color: rgb(0,182,255);
+	grid-area: r2
+}
+#r3 {
+    background-color: rgb(0,182,255);
+	grid-area: r3
+}
+#cr1 {
+    background-color: rgb(255,210,0);
+	grid-area: cr1
+}
+#cr2 {
+    background-color: rgb(255,210,0);
+	grid-area: cr2
+}
+#cr3 {
+    background-color: rgb(255,210,0);
+	grid-area: cr3
+}
+#c1:hover::after,
+#c2:hover::after,
+#c3:hover::after,
+#bd1:hover::after,
+#bd2:hover::after,
+#al1:hover::after,
+#al2:hover::after,
+#r1:hover::after,
+#r2:hover::after,
+#r3:hover::after,
+#ar1:hover::after,
+#ar2:hover::after,
+#cr1:hover::after,
+#cr2:hover::after,
+#cr3:hover::after,
+#sp1:hover::after,
+#sp2:hover::after{
+	position: relative;
+	white-space: pre;
+    content: "\AJ. Doe Salle M001";
+}

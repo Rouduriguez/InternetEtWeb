@@ -1,0 +1,13 @@
+main * {
+    display: flex;
+    flex-wrap: nowrap;
+    border: solid red 1px;
+}
+header {
+    display: flex;
+    flex-direction: row;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+}

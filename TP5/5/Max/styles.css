@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Main{
+    display: flex;
+    border: 3px solid black;
+    width: fit-content;
+
+}
+
+
+.horaire,.Lundi,.Mardi,.Mercredi,.Jeudi,.Vendredi{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0 5px 5px;
+}
+
+.Case{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(99, 99, 235);
+    height: 50px;
+    width: 150px;
+    margin-bottom: 5px;
+    
+}
+.CaseTitle{
+    background-color: rgb(99, 99, 235);
+}
+
+.Cour2h1j{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: greenyellow;
+    height: 107px;
+    width: 150px;
+    
+
+}

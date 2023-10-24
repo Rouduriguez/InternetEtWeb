@@ -1,0 +1,8 @@
+td {
+    border: 0.1em solid black;
+}
+
+tr:nth-of-type(1) td, tr td:nth-of-type(1) {
+    font-weight: bold;
+    text-align: center;
+}

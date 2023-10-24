@@ -1,0 +1,36 @@
+img {
+   height: 200px;
+   width: 200px; 
+}
+body {    
+    background-color: lightgrey;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+table {
+    border-collapse:collapse;
+    margin: auto;
+    
+}
+
+td, th {
+    border: .15em solid black;
+}
+th {
+    color: white;
+    background-color: lightblue;
+}
+
+td+td+td {
+    background-color: lightyellow;
+    text-align: center;
+}
+caption {
+    font-weight: bold;
+}
