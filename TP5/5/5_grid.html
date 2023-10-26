@@ -2,8 +2,9 @@
 
 <html>
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="5_grid.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="5_grid.css">
+    <title>Emploi du temps en Grid</title>
 </head>
 
 <body>
@@ -17,7 +18,7 @@
         <div id="j4">Jeudi</div>
         <div id="j5">Vendredi</div>
         
-        <div id="h1">8h00-9h00</div>
+        <div id="h1" class="ligne1">8h00-9h00</div>
         <div id="h2">9h00-10h00</div>
         <div id="h3">10h00-11h00</div>
         <div id="h4">11h00-12h00</div>
@@ -28,7 +29,7 @@
         <div id="h9">16h00-17h00</div>
         <div id="h10">17h00-18h00</div>
         
-        <div id="c1"><p>Cours de C</p></div>
+        <div id="c1" class="ligne1"><p>Cours de C</p></div>
         <div id="c2">TP de C</div>
         <div id="c3"><p>TD de C</p></div>
 
@@ -45,23 +46,31 @@
         <div id="rep2">Repas</div>
         <div id="rep3">Repas</div>
         
-        <div id="al1"><p>TP d'Algo</p></div>
+        <div id="al1" class="ligne1" onmouseover="changerCouleur(this)><p>TP d'Algo</p></div>
         <div id="al2"><p>TD d'Algo</p></div>
 
-        <div id="r1"><p>TP de Réseau</p></div>
+        <div id="r1" class="ligne1"><p>TP de Réseau</p></div>
         <div id="r2"><p>Cours de Réseau</p></div>
         <div id="r3"><p>TD de Réseau</p></div>
 
         <div id="cr1"><p>TP de Crypto</p></div>
         <div id="cr2"><p>Cours de Crypto</p></div>
         <div id="cr3"><p>TD de Crypto</p></div>
-        <div></div>
-        <div></div>
+        <div class="ligne1"></div>
+        <div class="ligne1"></div>
         <div></div>
         <div ></div>
         <div></div>
         <div></div>
     </div>
 
+    <script>
+        function changerCouleurImpair(elementSurvole) {
+          var elementsDeLaClasse = document.getElementsByClassName('maClasse');
+          for (var i = 0; i < elementsDeLaClasse.length; i++) {
+            elementsDeLaClasse[i].style.color = rgb(88,136,233); // Change la couleur de tous les éléments de la classe en rouge
+          }
+        }
+      </script>
 </body>
 </html>
