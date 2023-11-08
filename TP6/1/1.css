@@ -1,0 +1,8 @@
+p {
+  color: blue;
+  display: inline;
+}
+p:hover {
+  text-decoration: underline;
+  text-decoration-color: blue;
+}

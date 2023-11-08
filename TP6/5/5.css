@@ -1,0 +1,49 @@
+main {
+  width: 50%;
+}
+li {
+  border: 2px solid black;
+  display: inline;
+  background-color: aqua;
+  font-weight: bold;
+  padding: 10px 0;
+  color: white;
+}
+li:hover {
+  cursor: pointer;
+}
+ul > ul > li {
+  display: inline;
+  background-color: magenta;
+}
+ul > ul > li:hover {
+  background-color: red;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+#plats,
+#desserts {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+main > ul {
+  position: relative;
+}
+#listePlats {
+  left: 0px;
+  width: 238px;
+}
+#listeDesserts {
+  left: 242px;
+  width: 261px;
+}
+#listePlats,
+#listeDesserts {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 27px;
+  text-align: center;
+}

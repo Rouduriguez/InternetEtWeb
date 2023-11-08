@@ -1,0 +1,24 @@
+body {
+  background-color: #582900;
+}
+p {
+  color: white;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+button {
+  width: 7%;
+  border-radius: 10%;
+  box-shadow: 2px 2px 10px silver;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(8, 201, 250);
+  margin-bottom: 20px;
+}
+button:hover {
+  background-color: rgb(0, 61, 230);
+  box-shadow: 2px 2px 10px red;
+}
