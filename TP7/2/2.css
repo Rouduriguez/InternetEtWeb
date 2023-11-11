@@ -1,0 +1,57 @@
+body{
+    color: #502314;
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+}
+img {
+    height: 150px;
+    width: auto;
+}
+fieldset {
+    margin: 10px;
+}
+header {
+    background-color: #F5EBDC;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 9fr;
+    font-size: larger;
+}
+nav {
+    display: flex;
+    background-color: #BB1E32;
+    padding: 20px;
+    font-size: 2em;
+    justify-content: space-around;
+}
+nav > a {
+    color: #FFFFFF;
+    font-weight: bolder;
+    text-decoration: none;
+}
+#logo {
+    grid-column: 1 / 2;
+}
+#nom_pizzeria {
+    grid-column: 2 / 3;
+    margin: auto;
+    font-weight: bolder;
+    font-size: 2em;
+
+}
+form > fieldset{
+    background-color: #F5EBDC;
+}
+#field_commande > fieldset {
+    background-color: white;
+}
+#field_commande > fieldset > label {
+    border: 2px dotted grey;
+    padding: 10px 10px;
+}
+legend {
+    font-size: 2em;;
+}
+fieldset > fieldset > legend {
+    font-size: 1.5em;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf8">
+  <title>TP7 1</title>
+  <link rel="stylesheet" href="1.css">
+</head>
+
+<body>
+  <form method="get" action="">
+    <fieldset id="field_commande">
+      <legend>COMMANDE</legend>
+      <fieldset id="field_pizzas">
+        <legend>Pizzas</legend>
+        <p>Voulez-vous de la pizza ? Prix : 3€ / u</p>
+        <input type="radio" name="pizza" value="pizza1" id="pizza1"> <label for="pizza1"><img
+            src="../images/pizza_maxi_best_of.jpg" alt="pizza maxi best of" title="Pizza Maxi Best-Of"></label>
+        <input type="radio" name="pizza" value="pizza2" id="pizza2"> <label for="pizza2"><img
+            src="../images/pizza_charbon.jpg" alt="pizza charbon" title="Pizza au Charbon"></label>
+        <input type="radio" name="pizza" value="pizza3" id="pizza3"> <label for="pizza3"><img
+            src="../images/pizza_kiwi.jpg" alt="pizza kiwi" title="Pizza au Kiwi"></label>
+
+        <input type="number" name="quantitePizza" id="quantitePizza" value="1" min="0" max="10">
+        <input type="radio" name="pizza" value="Pas de Pizza" id="pizzaNon"> <label for="pizzaNon">Pas de
+          pizza</label>
+        <input type="checkbox" name="huile" id="huile"> <label for="huile">Supplément d'huile</label>
+
+      </fieldset>
+      <fieldset id="field_boissons">
+        <legend>Boissons</legend>
+        <p>Voulez-vous à boire ? Prix : 2€ / u</p>
+        <input type="radio" name="boisson" value="boisson1" id="boisson1"> <label for="boisson1"><img
+            src="../images/chibre_bleu.jpg" alt="Chibre Bleu" title="Chibre Bleu"></label>
+        <input type="radio" name="boisson" value="boisson2" id="boisson2"> <label for="boisson2"><img
+            src="../images/coca_garlic.jpg" alt="Coca Garlic" title="Coca Garlic"></label>
+        <input type="radio" name="boisson" value="boisson3" id="boisson3"> <label for="boisson3"><img
+            src="../images/coca_bacon.jpg" alt="Coca Bacon" title="Coca Bacon"></label>
+        <input type="radio" name="boisson" value="boisson4" id="boisson4"> <label for="boisson4"><img
+            src="../images/pee_cola.jpg" alt="Pee Cola" title="Pee Cola"></label>
+        <input type="number" name="quantiteBoisson" id="quantiteBoisson" value="1" min="0" max="10">
+        <input type="radio" name="boisson" value="boissonNon" id="boissonNon"> <label for="boissonNon">Pas de
+          boisson</label>
+      </fieldset>
+      <label for="commentaires">Commentaires :</label>
+      <textarea name="commentaires" id="commentaires" placeholder="Pas de fromage ? Pas de sauce du chef ? ..."
+        cols="60" rows="1"></textarea>
+    </fieldset>
+    <fieldset id="field_coords">
+      <legend>VOS COORDONNÉES</legend>
+
+      <br>
+      <label for="nom">Nom : </label> <input type="text" name="nom" id="nom">
+      <label for="phone">Numéro de téléphone : </label> <input type="tel" name="phone" id="phone">
+      <label for="adresse">Adresse postale :</label> <input type="text" name="adresse" id="adresse">
+      <label for="email">Adresse mail :</label> <input type="email" name="email" id="email">
+    </fieldset>
+    <button type="submit">Envoyer</button>
+  </form>
+</body>
