@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf8">
+    <title>TP7 5 </title>
+    <link rel="stylesheet" href="5.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="5.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="logo"><img src="../images/jabba_hutt.png" alt="Logo"></div>
+        <div id="nom_pizzeria">JABBA HUTT PIZZERIA</div>
+    </header>
+    <nav><a href="#field_pizzas">Pizzas</a>
+        <a href="#field_boissons">Boissons</a>
+        <a href="#field_coords">Vos Coordonnées</a>
+    </nav>
+<form method="get" action="">
+    <fieldset id="field_commande">
+      <legend>COMMANDE</legend>
+      <fieldset id="field_pizzas">
+        <legend>Pizzas</legend>
+        <select name="pizza" id="pizza">
+        <option> ---Choisissez une pizza--- </option>
+		  <option value="Pizza Maxi Best-Of" class="pizzaJquery">Pizza Maxi Best-Of</option>
+		  <option value="Pizza au Charbon" class="pizzaJquery">Pizza au Charbon</option>
+		  <option value="Pizza au Kiwi" class="pizzaJquery">Pizza au Kiwi</option>
+		  <option value="Pas de Pizza" class="pizzaJquery" id="pizzaNon">Pas de Pizza</option>
+
+		</select>
+				  <label for="quantitePizza">Combien ?</label>
+		  <input type="number" name="quantitePizza" id="quantitePizza" value="0" min="0" max="10">
+
+        <input type="checkbox" name="huile" id="huile"> <label for="huile">Supplément d'huile</label>
+
+      </fieldset>
+      <fieldset id="field_boissons">
+        <legend>Boissons</legend>
+        <p>Voulez-vous à boire ? Prix : 2€ / u</p>
+        <div id="box_boissons">
+        <div class="flexBoisson">
+        	<label for="boisson1"><img
+			src="../images/chibre_bleu.jpg" alt="Chibre Bleu" title="Chibre Bleu"></label>
+			<input type="radio" name="boisson" value="Chibre Bleu" id="boisson1">
+			<p>Chibre Bleu</p>
+		</div>
+		<div class="flexBoisson">
+        	 <label for="boisson2"><img
+				src="../images/coca_garlic.jpg" alt="Coca Garlic" title="Coca Garlic"></label>
+				<input type="radio" name="boisson" value="Coca Garlic" id="boisson2">
+				<p>Coca Garlic</p>
+
+		</div>
+		<div class="flexBoisson">
+        	 <label for="boisson3"><img
+				src="../images/coca_bacon.jpg" alt="Coca Bacon" title="Coca Bacon"></label>
+				<input type="radio" name="boisson" value="Coca Bacon" id="boisson3">
+				<p>Coca Bacon</p>
+		</div>
+		<div class="flexBoisson">
+        	 <label for="boisson4"><img
+				src="../images/pee_cola.jpg" alt="Pee Cola" title="Pee Cola"></label>
+				<input type="radio" name="boisson" value="Pee Cola" id="boisson4">
+				<p>Pee Cola</p>
+		</div>
+		<div class="flexBoisson" id="boxPasBoisson">
+		<label for="boissonNon"><img
+				src="../images/non-merci.jpg" alt="Pee Cola" title="Pee Cola"></label>
+			<input type="radio" name="boisson" value="boisson" id="boissonNon"> 
+                    <p>Pas de boisson</p>
+        </div>
+		</div>
+		<label for="quantiteBoisson">Combien ?</label>
+		<input type="number" name="quantiteBoisson" id="quantiteBoisson" value="0" min="0" max="10">
+        
+        
+      </fieldset>
+      <div id="divPrix">
+                <div> Prix : </div>
+                <div id="prix"> 0 </div>
+                <div> € </div>
+            </div>
+      <label for="commentaires">Commentaires :</label>
+      <textarea name="commentaires" id="commentaires" placeholder="Pas de fromage ? Sauce du chef ? ..."
+        cols="60" rows="1"></textarea>
+    </fieldset>
+    <fieldset id="field_coords">
+      <legend>VOS COORDONNÉES</legend>
+
+      <br>
+      <label for="nom">Nom : </label> <input type="text" name="nom" id="nom" pattern="^[a-zA-Z]+$"required> <br>
+      <label for="phone">Numéro de téléphone : </label> <input type="tel" name="phone" id="phone" pattern="^0[67]\d{8}$" required><br>
+      <label for="adresse">Adresse postale :</label> <input type="text" name="adresse" id="adresse" required><br>
+      <label for="email">Adresse mail :</label> <input type="email" name="email" id="email">
+    </fieldset>
+    <div id="input">
+        <span id="deco"
+          ><input id="submit" type="submit" value="Envoyer la commande"
+        /></span>
+      </div>
+  </form>
+</body>

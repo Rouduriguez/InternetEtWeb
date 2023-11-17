@@ -1,0 +1,131 @@
+body{
+    color: #502314;
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+}
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+fieldset {
+    margin: 10px;
+}
+header {
+    background-color: #F5EBDC;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 9fr;
+    font-size: larger;
+}
+nav {
+    display: flex;
+    background-color: #BB1E32;
+    padding: 20px;
+    font-size: 2em;
+    justify-content: space-around;
+}
+nav > a {
+    color: #FFFFFF;
+    font-weight: bolder;
+    text-decoration: none;
+}
+#logo {
+    grid-column: 1 / 2;
+}
+#nom_pizzeria {
+    grid-column: 2 / 3;
+    margin: auto;
+    font-weight: bolder;
+    font-size: 2em;
+
+}
+form > fieldset{
+    background-color: #F5EBDC;
+}
+#field_commande > fieldset {
+    background-color: white;
+}
+#field_commande > fieldset > label {
+    padding: 10px 10px;
+}
+legend {
+    font-size: 2em;;
+}
+fieldset > fieldset > legend {
+    font-size: 1.5em;
+}
+input {
+    border-radius: 10px;
+}
+:required {
+    border: 2px dotted red;
+}
+#divPrix {
+    display: flex;
+    
+}
+#divPrix > p {
+    display: inline;
+}
+#box_boissons {
+display: flex;
+}
+
+.flexBoisson {
+display: flex;
+flex-direction: column;}
+.flexBoisson > p {
+text-align: center}
+input[type="submit"] {
+    background-color: none;
+    position: relative;
+    border: 1px solid #a67245;
+    outline: none;
+    padding: 10px 30px;
+    background: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#deco::before {
+    content: "";
+    position: absolute;
+    transform: scale(1);
+    /* z-index: -1; */
+    height: 100%;
+    width: 100%;
+    background-color: #a67245;
+    transition: 0.6s;
+}
+
+#deco:hover::before {
+    transform: scale(0);
+    transition: 0.6s;
+}
+span {
+    position: relative;
+}
+/* CHAMPS OBLIGATOIRES */
+input:required {
+    margin: 0 auto;
+    border: none;
+    border-bottom: 1px solid #ce1327;
+    outline: none;
+    padding: 0 5px 5px 0;
+    margin: 0 5px;
+}
+
+input:required::placeholder {
+    color: #EEEEEE;
+}
+#input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
